@@ -41,7 +41,7 @@ http://ec2-18-229-150-15.sa-east-1.compute.amazonaws.com/
 Documentation created to instruct commands in deploying React.js applications on Amazon AWS EC2 (E. Cloud 2):
 
 1. Command to connect to the instance
-ssh -i "MeuKeyPair.pem" ec2-user@ec2-18-230-199-167.sa-east-1.compute.amazonaws.com
+ssh -i "MyKeyPair.pem" ec2-user@ec2-18-230-199-167.sa-east-1.compute.amazonaws.com
 
 2. Command for machine permissions and updates
 sudo su
@@ -54,7 +54,7 @@ pwd
 npm run build
 
 5. Command to copy "/ build" from the project to the virtual machine
-scp -i "MeuKeyPair.pem" -r build / USEREC2: / home / ec2-user (pwd)
+scp -i "MyKeyPair.pem" -r build / USEREC2: / home / ec2-user (pwd)
 
 6. Command to install Apache (httpd)
 yum install httpd
